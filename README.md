@@ -6,8 +6,6 @@ A pip list command shows that I have the following packages and versions on my m
 
 Package         Version
 
---------------- ---------
-
 certifi         2019.11.28
 
 chardet         3.0.4
