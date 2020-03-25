@@ -3,8 +3,9 @@ This system gets financial data from quandl,
 crunches some numbers and outputs data to an Excel file.
 
 A pip list command shows that I have the following packages and versions on my machine:
+
 Package         Version
---------------- ----------
+--------------- ---------
 certifi         2019.11.28
 chardet         3.0.4
 cycler          0.10.0
