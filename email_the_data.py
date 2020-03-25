@@ -46,8 +46,16 @@ def email_my_data():
     attachment.add_header("Content-Disposition", "attachment", filename=email_reference.filetosend)
     msg.attach(attachment)
 
-    server = smtplib.SMTP("smtp.gmail.com:587")
-    server.starttls()
-    server.login(email_reference.emailfrom,email_reference.password)
-    server.sendmail(email_reference.emailfrom, email_reference.distribution_list, msg.as_string())
-    server.quit()
+    # Send the email - if you get an error that says Username and Password not accepted, please go to the 
+    # gmail account that is sending the email and choose 'Less secure app access'. Gmail does not like
+    # smtplib - Peter Koppelman March 25, 2020
+    try:
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.ehlo()
+        server.starttls()
+        server.login(email_reference.emailfrom, email_reference.password)
+        server.sendmail(email_reference.emailfrom, email_reference.distribution_list, msg.as_string())
+        server.close()
+        print('Email successfully sent to participants')
+    except:
+        print('Something went wrong - cannot send email to participants')
