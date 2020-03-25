@@ -5,31 +5,57 @@ crunches some numbers and outputs data to an Excel file.
 A pip list command shows that I have the following packages and versions on my machine:
 
 Package         Version
+
 --------------- ---------
+
 certifi         2019.11.28
+
 chardet         3.0.4
+
 cycler          0.10.0
+
 et-xmlfile      1.0.1
+
 idna            2.9
+
 inflection      0.3.1
+
 jdcal           1.4.1
+
 kiwisolver      1.1.0
+
 matplotlib      3.2.1
+
 more-itertools  8.2.0
+
 numpy           1.18.1
+
 openpyxl        3.0.3
+
 pandas          1.0.1
+
 pip             20.0.2
+
 pyparsing       2.4.6
+
 python-dateutil 2.8.1
+
 pytz            2019.3
+
 pywin32         227
+
 Quandl          3.5.0
+
 requests        2.23.0
+
 scipy           1.4.1
+
 seaborn         0.10.0
+
 setuptools      41.2.0
+
 six             1.14.0
+
 urllib3         1.25.8
 
 The data that is inputted from quandl is the following:
